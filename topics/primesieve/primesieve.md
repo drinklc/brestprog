@@ -37,7 +37,7 @@ void compute_primes(int n) {
         sieve[i] = true;
     }
 
-    for (int i = 2; i <= n; i++) {
+    for (int i = 2; i * i <= n; i++) {
         if (sieve[i]) {     //если i не вычеркнуто
             primes.push_back(i);
 
